@@ -1,0 +1,2 @@
+Simple custom error object
+

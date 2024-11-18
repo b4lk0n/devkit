@@ -1,0 +1,12 @@
+{
+  "name": "gikalo-devkit",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@9.13.2",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "license": "MIT"
+}

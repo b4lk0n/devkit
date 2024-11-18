@@ -1,0 +1,22 @@
+{
+  "name": "@gikalo/app-err",
+  "type": "module",
+  "version": "0.1.0",
+  "sideEffects": false,
+  "files": ["build"],
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Andrii Gikalo <dev@andrii.so>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
