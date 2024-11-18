@@ -3,7 +3,9 @@
   "type": "module",
   "version": "0.1.0",
   "sideEffects": false,
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "exports": {
     ".": {
       "types": "./build/index.d.ts",
@@ -11,12 +13,15 @@
     }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "Andrii Gikalo <dev@andrii.so>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "@vitest/coverage-v8": "2.1.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   }
 }
