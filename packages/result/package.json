@@ -3,17 +3,19 @@
   "type": "module",
   "version": "0.1.0",
   "sideEffects": false,
-  "files": [
-    "build"
-  ],
+  "files": ["build"],
   "exports": {
     ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
+      "types": "./build/result/index.d.ts",
+      "default": "./build/result/index.js"
+    },
+    "async": {
+      "types": "./build/async-result/index.d.ts",
+      "default": "./build/async-result/index.js"
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project ./tsconfig.build.json",
     "test": "vitest run"
   },
   "keywords": [],
