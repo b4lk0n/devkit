@@ -1,0 +1,28 @@
+{
+  "name": "@gikalo/option",
+  "type": "module",
+  "version": "0.1.0",
+  "sideEffects": false,
+  "files": ["build"],
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --project ./tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "Andrii Gikalo <dev@andrii.so>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-v8": "2.1.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  },
+  "dependencies": {
+    "remeda": "^2.17.3"
+  }
+}
