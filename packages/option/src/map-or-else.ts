@@ -1,7 +1,7 @@
 import { purry } from "remeda"
-import type { Thunk, UnaryFn } from "./types.js"
 import type { Option } from "./option.js"
 import { isSome, some } from "./option.js"
+import type { Thunk, UnaryFn } from "./types.js"
 import { unwrap } from "./unwrap.js"
 
 export function mapOrElse<T, U>(

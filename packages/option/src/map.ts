@@ -1,7 +1,7 @@
 import { purry } from "remeda"
-import type { UnaryFn } from "./types.js"
 import type { Option } from "./option.js"
 import { isSome, some } from "./option.js"
+import type { UnaryFn } from "./types.js"
 import { unwrap } from "./unwrap.js"
 
 export function map<T, U>(f: UnaryFn<T, U>): (opt: Option<T>) => Option<U>
