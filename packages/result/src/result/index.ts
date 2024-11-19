@@ -1,4 +1,4 @@
-export type { Result } from "./result.js"
+export { type Result, ok, isOk, err, isErr } from "./result.js"
 export { fromThrowable } from "./from-throwable.js"
 export { mapErr } from "./map-err.js"
 export { mapOr } from "./map-or.js"
